@@ -1,0 +1,283 @@
+@font-face {
+    font-family: Aller;
+    src: url('assets/fonts/Aller/Aller_Rg.ttf');
+}
+
+@font-face {
+    font-family: AllerLight;
+    src: url('assets/fonts/Aller/Aller_Lt.ttf');
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src: url('assets/fonts/Lato/Lato-Reg.ttf');
+}
+
+@font-face {
+    font-family: LatoBold;
+    src: url('assets/fonts/Lato/Lato-Bol.ttf');
+}
+
+.sentiment-0 {
+  background-color: #2e5ca6;
+}
+
+.sentiment-2 {
+  background-color: #586db9;
+}
+
+.sentiment-4 {
+  background-color: #008fd0;
+}
+
+.sentiment-6 {
+  background-color: #57cccc;
+}
+
+.sentiment-8 {
+  background-color: #ceebee;
+}
+
+.sentiment-10 {
+  background-color: #ffffff;
+}
+
+.sentiment-12 {
+  background-color: #ffeec3;
+}
+
+.sentiment-14 {
+  background-color: #ffcc43;
+}
+
+.sentiment-16 {
+  background-color: #ffa02d;
+}
+
+.sentiment-18 {
+  background-color: #ff6d3a;
+}
+
+.sentiment-20 {
+  background-color: #ee443a;
+}
+
+body {
+  background-color: #f9f8f8;
+}
+
+.bar {
+  height: 65px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.bar {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: rgba(0,0,0, .8);
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #f3f2f2;
+  position: relative;
+}
+
+.bar:before, .bar:after {
+  -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.43);
+  -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.43);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.43);
+  position: absolute;
+  bottom: 24px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bar:after {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  right: 15px;
+  left: auto;
+}
+
+.bar:before {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  right: auto;
+  left: 15px;
+}
+
+.num {
+  color:red;
+}
+
+.logo {
+  position: absolute;
+  left:20px;
+  padding-top: 18px;
+}
+
+.location {
+  font-size: 16px;
+  color: #8e8f90;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.bar-name, .location {
+  text-align: center;
+}
+
+.bar-name, .stats-num {
+  font-family: Aller;
+}
+
+.bar-name {
+  font-size: 22px;
+  margin-top: 20px
+}
+
+.location, .stats-title {
+  font-family: AllerLight;
+}
+
+.profile-pic {
+  width:100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.profile {
+  width:400px;
+  margin:0 auto;
+}
+
+.divider {
+  margin: 0 13px;
+}
+
+.stats {
+  width:540px;
+  margin: 0 auto;
+}
+
+.stats-num, .stats-title, .divider {
+  display: inline;
+}
+
+.sentiment-big-bar {
+  height: 40px;
+  width: 100%;
+  background-color: #273137;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.sentiment-little-bar {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 15px;
+}
+
+.knotches {
+  width: 540px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.topic {
+  font-family: Aller;
+  font-size: 22px;
+  width: 540px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.right-arrow {
+  float:right;
+}
+
+.comment {
+  font-family: LatoBold;
+  padding: 65px 60px;
+  width: 420px;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.triangle {
+  float:left;
+  position: absolute;
+  left:20px;
+  bottom:-20px;
+}
+
+.comment-author {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.comment-author-image {
+  width: 50px;
+  display: inline;
+}
+
+.comment-author-name {
+  font-family: Aller;
+  font-size: 18px;
+  display: inline;
+  position: relative;
+  bottom: 18px;
+  left: 10px;
+}
+
+.reply {
+  margin: 5px 0;
+}
+
+.reply-author-image {
+  width: 25px;
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top:6px;
+}
+
+.reply-author-name {
+  font-family: LatoBold;
+  font-size: 14px;
+  color: #ee443a;
+  display: inline-block;
+}
+
+.reply-content {
+  font-family: LatoRegular;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.comment-input {
+  display:block;
+}
+
+input[type='text'] {
+  font-family: LatoRegular;
+  font-size: 16px;
+  border: 2px solid #e1e1e1;
+  color: #979797;
+  padding: 15px;
+  margin: 20px 0;
+  width: 520px;
+}
