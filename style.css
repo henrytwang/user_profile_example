@@ -161,7 +161,7 @@ body {
 }
 
 .divider {
-  margin: 0 13px;
+  margin: 0 18px;
 }
 
 .stats {
@@ -279,5 +279,5 @@ input[type='text'] {
   color: #979797;
   padding: 15px;
   margin: 20px 0;
-  width: 520px;
+  width: 505px;
 }
