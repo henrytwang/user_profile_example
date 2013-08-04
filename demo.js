@@ -21,7 +21,7 @@ data = {
       },
       "__v": 3,
       "_id": "51cb400cd3a48fb64d000137",
-      "comment": "Same sex marriage is now legal in 13 states. 30% of Americans live in a state where gay couples can marry legally. ðŸ˜Š",
+      "comment": "Same sex marriage is now legal in 13 states. 30% of Americans live in a state where gay couples can marry legally.",
       "sentiment": 20,
       "timestamp": "2013-06-26T19:25:00.612Z",
       "topic": "Gay marriage",
@@ -341,7 +341,7 @@ data = {
       },
       "__v": 0,
       "_id": "51cb36d4d69be33620000163",
-      "comment": "Can't wait to walk in the SF pride parade with @ToriBrynWycoff this weekend!!! ðŸŽ‰ðŸŽˆ",
+      "comment": "Can't wait to walk in the SF pride parade with @ToriBrynWycoff this weekend!!!",
       "sentiment": 20,
       "timestamp": "2013-06-26T18:45:40.511Z",
       "topic": "Gay Pride Parades",
@@ -485,7 +485,7 @@ data = {
   ]
 };
 
-  template = "{{#userInfo}}<div class='bar'><img class='logo' src='assets/knotch-logo.png'/><div class='bar-name'>{{name}}</div></div><img src='{{profilePicUrl}}' class='profile-pic'/><div class='location'>{{location}}</div><div class='stats'><div class='stats-num'>{{num_topics}}</div><div class='stats-title'> Topics</div><img class='divider' src='assets/divider.png'/><div class='stats-num'>{{num_followers}}</div><div class='stats-title'> Followers</div><img class='divider' src='assets/divider.png'/><div class='stats-num'>{{num_following}}</div><div class='stats-title'> Following</div><img class='divider' src='assets/divider.png'/><div class='stats-num'>{{num_glory}}</div><div class='stats-title'> Glory</div></div>{{/userInfo}}<div class='sentiment-big-bar'><img class='sentiment-little-bar' src='assets/knotch-sentnements-bar.png'/></div>{{#knotches}}<div class='knotches'><div class='topic'>{{topic}}<img class='right-arrow' src='assets/topic-arrow.png'></div><div class='comment sentiment-{{sentiment}}'>{{comment}}<img src='knotch_boxes/triangle{{sentiment}}.png' class='triangle'/></div>{{#userId}}<div class='comment-author'><img class='comment-author-image' src='{{profilePicUrl}}'/><div class='comment-author-name'>{{name}}</div></div>{{/userId}}{{#replies}}{{#userId}}<div class='reply'><div class='reply-author-name'><img class='reply-author-image' src='{{profilePicUrl}}'/>{{name}}</div><div class='reply-content'>'{{reply}}'</div></div>{{/userId}}{{/replies}}<input class='comment-input' type='text' placeholder='Comment on this knotch...'></div>{{/knotches}}"
+  template = "{{#userInfo}}<div class='bar'><img class='logo' src='assets/knotch-logo.png'/><div class='bar-name'>{{name}}</div></div><img src='{{profilePicUrl}}' class='profile-pic'/><div class='location'>{{location}}</div><div class='stats'><div class='stats-num'>{{num_topics}}</div><div class='stats-title'> Topics</div><img class='divider' src='assets/divider.png'/><div class='stats-num'>{{num_followers}}</div><div class='stats-title'> Followers</div><img class='divider' src='assets/divider.png'/><div class='stats-num'>{{num_following}}</div><div class='stats-title'> Following</div><img class='divider' src='assets/divider.png'/><div class='stats-num'>{{num_glory}}</div><div class='stats-title'> Glory</div></div>{{/userInfo}}<div class='sentiment-big-bar'><img class='sentiment-little-bar' src='assets/knotch-sentnements-bar.png'/></div>{{#knotches}}<div class='knotches'><div class='topic'>{{topic}}<img class='right-arrow' src='assets/topic-arrow.png'></div><div class='comment sentiment-{{sentiment}}'>{{comment}}<img src='boxes/triangle{{sentiment}}.png' class='triangle'/></div>{{#userId}}<div class='comment-author'><img class='comment-author-image' src='{{profilePicUrl}}'/><div class='comment-author-name'>{{name}}</div></div>{{/userId}}{{#replies}}{{#userId}}<div class='reply'><div class='reply-author-name'><img class='reply-author-image' src='{{profilePicUrl}}'/>{{name}}</div><div class='reply-content'>'{{reply}}'</div></div>{{/userId}}{{/replies}}<input class='comment-input' type='text' placeholder='Comment on this knotch...'></div>{{/knotches}}"
   html = Mustache.render(template, data);
   $('body').append(html);
 
